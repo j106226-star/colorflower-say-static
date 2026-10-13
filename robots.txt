@@ -1,0 +1,19 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /cart
+
+User-agent: Bingbot
+Allow: /
+Disallow: /cart
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /cart
+
+Sitemap: https://j106226-star.github.io/colorflower-say-static/sitemap.xml
