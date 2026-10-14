@@ -10,7 +10,7 @@
       id: "indigo-bell-jar",
       name: "夜知・靛色鐘罩花",
       size: "9 × 12 公分",
-      price: 880,
+      price: 1280,
       image: "images/flowers/indigo-bell-jar.webp",
       imageAlt: "夜知・靛色鐘罩花 寶藍色永生花鐘罩作品，玻璃罩與木質底座",
       imageWidth: 800,
@@ -26,9 +26,19 @@
       imageWidth: 800,
       imageHeight: 800,
     },
+    "blue-perfume-bottle": {
+      id: "blue-perfume-bottle",
+      name: "藍色香水瓶",
+      size: "約 寬 11 × 高 15 × 厚 6 公分",
+      price: 880,
+      image: "images/flowers/blue-perfume-bottle.webp",
+      imageAlt: "藍色香水瓶：圓形玻璃瓶裡的藍色與白色永生花，瓶口繫著藍色絲帶",
+      imageWidth: 800,
+      imageHeight: 1066,
+    },
   };
 
-  const formatTwd = (amount) => `NT$${amount}`;
+  const formatTwd = (amount) => `NT$${Number(amount).toLocaleString("en-US")}`;
 
   const readCart = () => {
     try {
@@ -88,8 +98,8 @@
     const list = items();
     return [
       "你好，我想訂購：",
-      ...list.map((item) => `・${item.name}（${item.size}）× ${item.quantity}，NT$${item.lineTotal}`),
-      `小計：NT$${subtotal()}（運費另計）`,
+      ...list.map((item) => `・${item.name}（${item.size}）× ${item.quantity}，${formatTwd(item.lineTotal)}`),
+      `小計：${formatTwd(subtotal())}（運費另計）`,
       "稱呼：",
       "手機：",
       "取貨方式／門市：",
