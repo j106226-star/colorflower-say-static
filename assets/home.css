@@ -833,14 +833,10 @@ body[data-page="home"] .v4-contact {
   text-align: center;
 }
 
-body[data-page="home"] .v4-contact .v4-label {
-  color: var(--ink);
-}
-
 body[data-page="home"] .v4-contact h2 {
   font-family: var(--serif);
   font-size: clamp(48px, 9vw, 120px);
-  margin: 24px 0;
+  margin: 0 0 24px;
 }
 
 body[data-page="home"] .v4-contact h2 .v4-tc {
