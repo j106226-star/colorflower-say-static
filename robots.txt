@@ -1,10 +1,14 @@
+# 預覽站放在 GitHub Pages 專案路徑 /colorflower-say-static/。
+# 正式網域（網站在網域根目錄）上線時：Disallow 改成 /cart，Sitemap 改成正式網域。
+# 品牌摘要：https://j106226-star.github.io/colorflower-say-static/llms.txt
+
 User-agent: Googlebot
 Allow: /
-Disallow: /cart
+Disallow: /colorflower-say-static/cart
 
 User-agent: Bingbot
 Allow: /
-Disallow: /cart
+Disallow: /colorflower-say-static/cart
 
 User-agent: Twitterbot
 Allow: /
@@ -14,6 +18,6 @@ Allow: /
 
 User-agent: *
 Allow: /
-Disallow: /cart
+Disallow: /colorflower-say-static/cart
 
 Sitemap: https://j106226-star.github.io/colorflower-say-static/sitemap.xml
